@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21622BD923A55A8E005D95C4 /* font.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21622BD723A55A8E005D95C4 /* font.cpp */; };
 		21C8E21C23A2969900B69CE7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21C8E21B23A2969900B69CE7 /* main.cpp */; };
 		21C8E22523A2971F00B69CE7 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C8E22323A2971F00B69CE7 /* GLUT.framework */; };
 		21C8E22623A2971F00B69CE7 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C8E22423A2971F00B69CE7 /* OpenGL.framework */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		21622BD723A55A8E005D95C4 /* font.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = font.cpp; sourceTree = "<group>"; };
+		21622BD823A55A8E005D95C4 /* font.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = font.hpp; sourceTree = "<group>"; };
 		21C8E21823A2969900B69CE7 /* main */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = main; sourceTree = BUILT_PRODUCTS_DIR; };
 		21C8E21B23A2969900B69CE7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		21C8E22323A2971F00B69CE7 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
@@ -47,7 +50,7 @@
 		21C8E20F23A2969900B69CE7 = {
 			isa = PBXGroup;
 			children = (
-				21C8E21A23A2969900B69CE7 /* main */,
+				21C8E21A23A2969900B69CE7 /* SourcesFile */,
 				21C8E21923A2969900B69CE7 /* Products */,
 				21C8E22223A2971F00B69CE7 /* Frameworks */,
 			);
@@ -61,12 +64,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		21C8E21A23A2969900B69CE7 /* main */ = {
+		21C8E21A23A2969900B69CE7 /* SourcesFile */ = {
 			isa = PBXGroup;
 			children = (
 				21C8E21B23A2969900B69CE7 /* main.cpp */,
+				21622BD723A55A8E005D95C4 /* font.cpp */,
+				21622BD823A55A8E005D95C4 /* font.hpp */,
 			);
-			path = main;
+			path = SourcesFile;
 			sourceTree = "<group>";
 		};
 		21C8E22223A2971F00B69CE7 /* Frameworks */ = {
@@ -135,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21622BD923A55A8E005D95C4 /* font.cpp in Sources */,
 				21C8E21C23A2969900B69CE7 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
