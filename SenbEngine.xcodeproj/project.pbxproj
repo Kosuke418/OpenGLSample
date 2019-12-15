@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		21622BD923A55A8E005D95C4 /* font.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21622BD723A55A8E005D95C4 /* font.cpp */; };
+		21622BDC23A55C47005D95C4 /* polygon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21622BDA23A55C47005D95C4 /* polygon.cpp */; };
 		21C8E21C23A2969900B69CE7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21C8E21B23A2969900B69CE7 /* main.cpp */; };
 		21C8E22523A2971F00B69CE7 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C8E22323A2971F00B69CE7 /* GLUT.framework */; };
 		21C8E22623A2971F00B69CE7 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C8E22423A2971F00B69CE7 /* OpenGL.framework */; };
@@ -28,7 +29,9 @@
 /* Begin PBXFileReference section */
 		21622BD723A55A8E005D95C4 /* font.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = font.cpp; sourceTree = "<group>"; };
 		21622BD823A55A8E005D95C4 /* font.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = font.hpp; sourceTree = "<group>"; };
-		21C8E21823A2969900B69CE7 /* main */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = main; sourceTree = BUILT_PRODUCTS_DIR; };
+		21622BDA23A55C47005D95C4 /* polygon.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = polygon.cpp; sourceTree = "<group>"; };
+		21622BDB23A55C47005D95C4 /* polygon.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = polygon.hpp; sourceTree = "<group>"; };
+		21C8E21823A2969900B69CE7 /* SenbEngine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SenbEngine; sourceTree = BUILT_PRODUCTS_DIR; };
 		21C8E21B23A2969900B69CE7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		21C8E22323A2971F00B69CE7 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		21C8E22423A2971F00B69CE7 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -59,7 +62,7 @@
 		21C8E21923A2969900B69CE7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				21C8E21823A2969900B69CE7 /* main */,
+				21C8E21823A2969900B69CE7 /* SenbEngine */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +73,8 @@
 				21C8E21B23A2969900B69CE7 /* main.cpp */,
 				21622BD723A55A8E005D95C4 /* font.cpp */,
 				21622BD823A55A8E005D95C4 /* font.hpp */,
+				21622BDA23A55C47005D95C4 /* polygon.cpp */,
+				21622BDB23A55C47005D95C4 /* polygon.hpp */,
 			);
 			path = SourcesFile;
 			sourceTree = "<group>";
@@ -86,9 +91,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		21C8E21723A2969900B69CE7 /* main */ = {
+		21C8E21723A2969900B69CE7 /* SenbEngine */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 21C8E21F23A2969900B69CE7 /* Build configuration list for PBXNativeTarget "main" */;
+			buildConfigurationList = 21C8E21F23A2969900B69CE7 /* Build configuration list for PBXNativeTarget "SenbEngine" */;
 			buildPhases = (
 				21C8E21423A2969900B69CE7 /* Sources */,
 				21C8E21523A2969900B69CE7 /* Frameworks */,
@@ -98,9 +103,9 @@
 			);
 			dependencies = (
 			);
-			name = main;
+			name = SenbEngine;
 			productName = main;
-			productReference = 21C8E21823A2969900B69CE7 /* main */;
+			productReference = 21C8E21823A2969900B69CE7 /* SenbEngine */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -117,7 +122,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 21C8E21323A2969900B69CE7 /* Build configuration list for PBXProject "main" */;
+			buildConfigurationList = 21C8E21323A2969900B69CE7 /* Build configuration list for PBXProject "SenbEngine" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -130,7 +135,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				21C8E21723A2969900B69CE7 /* main */,
+				21C8E21723A2969900B69CE7 /* SenbEngine */,
 			);
 		};
 /* End PBXProject section */
@@ -142,6 +147,7 @@
 			files = (
 				21622BD923A55A8E005D95C4 /* font.cpp in Sources */,
 				21C8E21C23A2969900B69CE7 /* main.cpp in Sources */,
+				21622BDC23A55C47005D95C4 /* polygon.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +286,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		21C8E21323A2969900B69CE7 /* Build configuration list for PBXProject "main" */ = {
+		21C8E21323A2969900B69CE7 /* Build configuration list for PBXProject "SenbEngine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				21C8E21D23A2969900B69CE7 /* Debug */,
@@ -289,7 +295,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		21C8E21F23A2969900B69CE7 /* Build configuration list for PBXNativeTarget "main" */ = {
+		21C8E21F23A2969900B69CE7 /* Build configuration list for PBXNativeTarget "SenbEngine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				21C8E22023A2969900B69CE7 /* Debug */,

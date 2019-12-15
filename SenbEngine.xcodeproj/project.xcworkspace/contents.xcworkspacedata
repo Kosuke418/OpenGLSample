@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:main.xcodeproj">
+      location = "self:/Users/kosuke/Applications/OpenGL-MakeGame/main/SenbEngine.xcodeproj">
    </FileRef>
 </Workspace>
