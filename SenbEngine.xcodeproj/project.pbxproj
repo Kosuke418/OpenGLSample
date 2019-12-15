@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		21622BD923A55A8E005D95C4 /* font.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21622BD723A55A8E005D95C4 /* font.cpp */; };
 		21622BDC23A55C47005D95C4 /* polygon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21622BDA23A55C47005D95C4 /* polygon.cpp */; };
+		21AAA20923A5EF42000679BE /* Rect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21AAA20723A5EF42000679BE /* Rect.cpp */; };
 		21C8E21C23A2969900B69CE7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21C8E21B23A2969900B69CE7 /* main.cpp */; };
 		21C8E22523A2971F00B69CE7 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C8E22323A2971F00B69CE7 /* GLUT.framework */; };
 		21C8E22623A2971F00B69CE7 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C8E22423A2971F00B69CE7 /* OpenGL.framework */; };
@@ -31,6 +32,8 @@
 		21622BD823A55A8E005D95C4 /* font.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = font.hpp; sourceTree = "<group>"; };
 		21622BDA23A55C47005D95C4 /* polygon.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = polygon.cpp; sourceTree = "<group>"; };
 		21622BDB23A55C47005D95C4 /* polygon.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = polygon.hpp; sourceTree = "<group>"; };
+		21AAA20723A5EF42000679BE /* Rect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Rect.cpp; sourceTree = "<group>"; };
+		21AAA20823A5EF42000679BE /* Rect.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Rect.hpp; sourceTree = "<group>"; };
 		21C8E21823A2969900B69CE7 /* SenbEngine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SenbEngine; sourceTree = BUILT_PRODUCTS_DIR; };
 		21C8E21B23A2969900B69CE7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		21C8E22323A2971F00B69CE7 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
@@ -53,7 +56,7 @@
 		21C8E20F23A2969900B69CE7 = {
 			isa = PBXGroup;
 			children = (
-				21C8E21A23A2969900B69CE7 /* SourcesFile */,
+				21C8E21A23A2969900B69CE7 /* Sources */,
 				21C8E21923A2969900B69CE7 /* Products */,
 				21C8E22223A2971F00B69CE7 /* Frameworks */,
 			);
@@ -67,7 +70,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		21C8E21A23A2969900B69CE7 /* SourcesFile */ = {
+		21C8E21A23A2969900B69CE7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				21C8E21B23A2969900B69CE7 /* main.cpp */,
@@ -75,8 +78,10 @@
 				21622BD823A55A8E005D95C4 /* font.hpp */,
 				21622BDA23A55C47005D95C4 /* polygon.cpp */,
 				21622BDB23A55C47005D95C4 /* polygon.hpp */,
+				21AAA20723A5EF42000679BE /* Rect.cpp */,
+				21AAA20823A5EF42000679BE /* Rect.hpp */,
 			);
-			path = SourcesFile;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		21C8E22223A2971F00B69CE7 /* Frameworks */ = {
@@ -148,6 +153,7 @@
 				21622BD923A55A8E005D95C4 /* font.cpp in Sources */,
 				21C8E21C23A2969900B69CE7 /* main.cpp in Sources */,
 				21622BDC23A55C47005D95C4 /* polygon.cpp in Sources */,
+				21AAA20923A5EF42000679BE /* Rect.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +275,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B7257TDM59;
 				ENABLE_HARDENED_RUNTIME = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "/Users/kosuke/Applications/OpenGL-MakeGame/main/glm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -279,6 +286,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B7257TDM59;
 				ENABLE_HARDENED_RUNTIME = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "/Users/kosuke/Applications/OpenGL-MakeGame/main/glm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
